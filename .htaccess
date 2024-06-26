@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /
+</IfModule>
+
+ServerSignature OFF
+AddDefaultCharset UTF-8
+ErrorDocument 404 error.php
+
+RewriteRule ^reg?$ reg/reg.php [NC, L]
